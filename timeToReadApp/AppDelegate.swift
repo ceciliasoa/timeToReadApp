@@ -4,17 +4,20 @@
 //
 //  Created by Cecilia Soares on 05/02/21.
 //
-
+// swiftlint:disable line_length
 import UIKit
 import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let window = UIWindow(frame: UIScreen.main.bounds)
+//        let viewController = ViewController()
+//        let navigation = UINavigationController(rootViewController: viewController)
+//        window.rootViewController = viewController
+//        window.makeKeyAndVisible()
         return true
     }
 
@@ -78,4 +81,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
-
