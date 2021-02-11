@@ -20,6 +20,7 @@ class SearchView: UIView {
     }
     func setupTableView() {
         self.addSubview(tableView)
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.tableView.backgroundColor = .backgroundColor
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
