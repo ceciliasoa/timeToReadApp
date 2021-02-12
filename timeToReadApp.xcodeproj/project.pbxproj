@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CEB649E1EA5483A4526397B5 /* Pods_timeToReadApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2CDB879857622E982B4864 /* Pods_timeToReadApp.framework */; };
+		D703176F25D56C410003D430 /* BookDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703176E25D56C410003D430 /* BookDescription.swift */; };
+		D703177225D56C630003D430 /* BookDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D703177125D56C630003D430 /* BookDescriptionViewController.swift */; };
 		D70BC95E25CD8D1F00B4CADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70BC95D25CD8D1F00B4CADF /* AppDelegate.swift */; };
 		D70BC96025CD8D1F00B4CADF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70BC95F25CD8D1F00B4CADF /* SceneDelegate.swift */; };
 		D70BC96825CD8D1F00B4CADF /* timeToReadApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D70BC96625CD8D1F00B4CADF /* timeToReadApp.xcdatamodeld */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		238FEB41981A4B9C415092A5 /* Pods-timeToReadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timeToReadApp.release.xcconfig"; path = "Target Support Files/Pods-timeToReadApp/Pods-timeToReadApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F2CDB879857622E982B4864 /* Pods_timeToReadApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timeToReadApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D703176E25D56C410003D430 /* BookDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDescription.swift; sourceTree = "<group>"; };
+		D703177125D56C630003D430 /* BookDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDescriptionViewController.swift; sourceTree = "<group>"; };
 		D70BC95A25CD8D1F00B4CADF /* timeToReadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeToReadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D70BC95D25CD8D1F00B4CADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D70BC95F25CD8D1F00B4CADF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,26 @@
 				9F2CDB879857622E982B4864 /* Pods_timeToReadApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D703176C25D56BEA0003D430 /* BookDescription */ = {
+			isa = PBXGroup;
+			children = (
+				D703176E25D56C410003D430 /* BookDescription.swift */,
+				D703177125D56C630003D430 /* BookDescriptionViewController.swift */,
+			);
+			path = BookDescription;
+			sourceTree = "<group>";
+		};
+		D703176D25D56C120003D430 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D7C4431625D15E7D0030D710 /* SearchView.swift */,
+				D7C4431A25D160CD0030D710 /* SearchViewController.swift */,
+				D74BC17F25D2D1ED007791F4 /* searchedCell.xib */,
+				D74BC18225D2D420007791F4 /* SearchedCellTableViewCell.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		D70BC95125CD8D1F00B4CADF = {
@@ -148,10 +172,8 @@
 		D7C4431425D15D940030D710 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7C4431625D15E7D0030D710 /* SearchView.swift */,
-				D7C4431A25D160CD0030D710 /* SearchViewController.swift */,
-				D74BC17F25D2D1ED007791F4 /* searchedCell.xib */,
-				D74BC18225D2D420007791F4 /* SearchedCellTableViewCell.swift */,
+				D703176D25D56C120003D430 /* Search */,
+				D703176C25D56BEA0003D430 /* BookDescription */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +302,7 @@
 			files = (
 				D7C4431B25D160CD0030D710 /* SearchViewController.swift in Sources */,
 				D7B942AC25D185BA005CF299 /* Colors.swift in Sources */,
+				D703176F25D56C410003D430 /* BookDescription.swift in Sources */,
 				D74BC17B25D2B4C6007791F4 /* BookRepository.swift in Sources */,
 				D7C4431725D15E7D0030D710 /* SearchView.swift in Sources */,
 				D74BC17125D2AC9C007791F4 /* APIManager.swift in Sources */,
@@ -289,6 +312,7 @@
 				D74BC18325D2D420007791F4 /* SearchedCellTableViewCell.swift in Sources */,
 				D7B942A525D16E93005CF299 /* Book.swift in Sources */,
 				D70BC96825CD8D1F00B4CADF /* timeToReadApp.xcdatamodeld in Sources */,
+				D703177225D56C630003D430 /* BookDescriptionViewController.swift in Sources */,
 				D70BC95E25CD8D1F00B4CADF /* AppDelegate.swift in Sources */,
 				D70BC96025CD8D1F00B4CADF /* SceneDelegate.swift in Sources */,
 				D74BC17825D2ACE8007791F4 /* APIError.swift in Sources */,
@@ -442,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ceciliasoares.timeToReadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ceciliasoares.timeToReadApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
