@@ -34,6 +34,7 @@ class SearchViewModel {
                                      percentage: nil,
                                      synopsis: description)
                 bookRepository.create(book: book)
+                
                 self.delegate?.reloadData()
             case .failure(let error):
                 print(error.localizedDescription)

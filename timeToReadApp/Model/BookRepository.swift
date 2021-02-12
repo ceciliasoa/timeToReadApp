@@ -31,26 +31,14 @@ class BookRepository {
         bookSave.setValue(book.readpages, forKey: "readpages")
         bookSave.setValue(book.percentage, forKey: "percentage")
         bookSave.setValue(book.status, forKey: "status")
+        bookSave.setValue(book.synopsis, forKey: "synopsis")
+
         do {
             try context.save()
         } catch let error as NSError {
             print("could not save \(error) \(error.userInfo)")
         }
     }
-//    func loadData(table: UITableView) {
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "BookEntity")
-//        guard let context = getContext() else { return }
-//        var books = [NSManagedObject]()
-//        do {
-//            let results = try context.fetch(fetchRequest)
-//            books = results as! [NSManagedObject]
-////            items.append(contentsOf: name)
-//            
-//        } catch {
-//            fatalError("Error is retriving titles items")
-//        }
-//        table.reloadData()
-//    }
     func readAll() -> [NSManagedObject] {
         var books = [NSManagedObject]()
         guard let context = getContext() else { return [] }
